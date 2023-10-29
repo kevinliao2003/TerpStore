@@ -1,0 +1,128 @@
+html { /* #include virtual="footer.shtml" */
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    border-color: green;
+    border-style: double;
+    border-style: solid;
+    border-width: 0.5em;
+    
+
+    background-image: url("images/JimHenson.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+}
+
+#para1 {
+    font-size: 40px;
+    color:azure;
+    background-color: rgba(0, 0, 0, .4);
+    width: 50%
+}
+
+#para2 {
+    font-size: 28px;
+
+    background-color: rgb(211,211,211, 0.8);
+    border-style: square;
+    border-width: 10rem;
+    margin: 0 auto; /* automatically adjusts margins */
+    text-align: center; /* text printed in center */
+    width: 400px;
+    margin-top: 200px; /* move picture down */
+}
+
+div {
+    font-size: 14px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+    border-style: solid; /* necessary for border to be visible */
+    border-width: 0.5em;
+    margin: 0 auto; /* automatically adjusts margins */
+    border-color: azure;
+    width: 400px;
+    margin-top: 25px; /* move picture down */
+    margin-left: 100px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    border-top: 8px solid lightblue;
+    border-bottom: 8px solid lightblue;
+    border-left: 8px solid lightblue;
+    border-right: 8px solid lightblue;
+    height: 45px;
+    width: 97%;
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+footer div {
+    font-size: 30px;
+
+    color:azure;
+    background-color: red;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    border-width: 0.25em;
+    height: 30px;
+    width: 99%;
+    margin: 0 auto;
+    margin-bottom: -15px; /* move footer down to bottom  */
+}
+
+/* for links */
+a:link { /* link hasn't been clicked on yet */
+    color: brown;
+}
+
+a:visited { /* links has been clicked on */
+    color: beige;
+}
+
+a:hover { /* decrease link size when hovered */
+    font-size: 10px;
+}
+
+select[name="item-choice"] { /* sets input style for box with name item-choice */
+    border-color: red;
+    border-style: solid;
+    width: 150px;
+}
+
+input[name="maximumCost"] {
+    border-color: red;
+    border-style: solid;
+    border-width: 0.25rem;
+    size: "5";
+}
+
+input[type="serialNumber"], input[name="info"], input[name="shipping"], input[name="email"] {
+    border-color: red;
+    border-style: solid;
+    border-width: 0.25rem;
+}
+
+input[name="submit"], input[name="reset"] {
+    border-radius: 8px; /* rounded boxes */
+    border-style: double;
+}
+
+input[name="reset"] {
+    border-style: double;
+}
+
+input[name="cc1"], input[name="cc2"], input[name="cc3"], input[name="cc4"] {
+    border-color: red;
+    border-style: solid;
+    border-width: 0.25rem;
+    width: 50px /* reduces size of text boxes */
+}

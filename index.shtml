@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Terp Store</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <p id="para1"><u><b>-Terp Store</b></u></p>
+
+    <p id="para2">
+        <u><a href="catalogInquiry.shtml" title="Catalog Inquiry">Catalog Inquiry</a></u>
+        <br> <!-- new line -->
+        <u><a href="placingOrder.shtml" title="Placing Order">Placing Order</a></u>
+    </p>
+
+    <!--#include virtual="footer.shtml" -->
+</body>
+
+</html>

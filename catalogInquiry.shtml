@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catalog Inquiry</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <p id="para1"><b><u>-Catalog Inquiry</u></b></p>
+
+    <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+        <div>
+            <br><br>
+            <u>Item Category</u>
+            <label><select name="item-choice">
+                <option value="clothes">Clothes</option>
+                <option value="books">Books</option>
+                <option value="music">Music</option>
+                <option value="food">Other</option>
+            </select></label>
+            <br><br>
+
+            <u>Maximum Cost ($):</u>
+            <input type="number" name="maximumCost" value = "1" size = "5" min = "1" max="1000" required>
+            <br><br>
+
+            <input type="checkbox" name="availableOnCampus"><u>Available on Campus</u>&nbsp;&nbsp;
+            <br><br>
+            
+            <!-- checked keyword to specify check by default -->
+            <input type="checkbox" name="availableOnline" checked><u>Available Online</u>&nbsp;&nbsp;
+            <br><br>
+
+            <u>Additional Information</u><br>
+            <textarea rows="5" cols="40" name="description"></textarea>
+            <br><br>
+
+            <u>Contact Email Address</u>
+            <input type="text" name="info" required placeholder=example@terpmail.umd.edu><br>
+            <br><br>
+
+            <input type="submit" name = "submit" value="Submit Inquiry">
+            <input type="reset" name = "reset" value="Clear">
+            <br><br>
+        </div>
+    
+    </form>
+
+    <!--#include virtual="footer.shtml" -->
+</body>
+
+</html>

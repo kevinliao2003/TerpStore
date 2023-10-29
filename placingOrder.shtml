@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Placing Order</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <p id="para1"><b><u>-Placing Order</u></b></p>
+
+    <form action="processing/placingOrder.php" method="post">
+        <div>
+            <br><br>
+            <label><u>Item Serial #</u><input type="text" name="serialNumber" placeholder="umd-item-0000"></label>
+            <br><br>
+
+            <p>
+                <u>Credit Card #</u>
+                <input id="text1" name="cc1" maxlength="4" required>
+                -
+                <input id="text2" name="cc2" maxlength="4" required>
+                -
+                <input id="text3" name="cc3" maxlength="4" required>
+                -
+                <input id="text4" name="cc4" maxlength="4" required>
+            </p>
+            <br><br>
+
+            <u>Shipping Address</u>
+            <input type="text" name="shipping" required>
+            <br><br>
+
+            <u>Contact Email Address</u>
+            <input type="text" name="email" maxlength="80" placeholder="example@terpmail.umd.edu">
+            <br><br>
+
+            <input type="submit" name = "submit" value="Submit Order">
+            <input type="reset" name = "reset" value="Clear">
+            <br><br>
+        </div>>
+    </form>
+
+    <!--#include virtual="footer.shtml" -->
+</body>
+
+</html>
